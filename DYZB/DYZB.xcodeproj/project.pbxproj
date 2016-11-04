@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		272A7B5B1DCC56AE00D83149 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272A7B5A1DCC56AE00D83149 /* AppDelegate.swift */; };
-		272A7B5D1DCC56AE00D83149 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272A7B5C1DCC56AE00D83149 /* ViewController.swift */; };
 		272A7B601DCC56AE00D83149 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272A7B5E1DCC56AE00D83149 /* Main.storyboard */; };
 		272A7B621DCC56AE00D83149 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 272A7B611DCC56AE00D83149 /* Assets.xcassets */; };
 		272A7B651DCC56AE00D83149 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272A7B631DCC56AE00D83149 /* LaunchScreen.storyboard */; };
+		272A7B8B1DCC789000D83149 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272A7B891DCC789000D83149 /* Home.storyboard */; };
+		272A7B8E1DCC78BE00D83149 /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272A7B8C1DCC78BE00D83149 /* Live.storyboard */; };
+		272A7B911DCC790C00D83149 /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272A7B8F1DCC790C00D83149 /* Follow.storyboard */; };
+		272A7B941DCC793B00D83149 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272A7B921DCC793B00D83149 /* Profile.storyboard */; };
+		272A7B961DCC7C8E00D83149 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272A7B951DCC7C8E00D83149 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		272A7B571DCC56AE00D83149 /* DYZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		272A7B5A1DCC56AE00D83149 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		272A7B5C1DCC56AE00D83149 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		272A7B5F1DCC56AE00D83149 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		272A7B611DCC56AE00D83149 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		272A7B641DCC56AE00D83149 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		272A7B661DCC56AE00D83149 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		272A7B8A1DCC789000D83149 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Base.lproj/Home.storyboard; sourceTree = SOURCE_ROOT; };
+		272A7B8D1DCC78BE00D83149 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Base.lproj/Live.storyboard; sourceTree = SOURCE_ROOT; };
+		272A7B901DCC790C00D83149 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Base.lproj/Follow.storyboard; sourceTree = SOURCE_ROOT; };
+		272A7B931DCC793B00D83149 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Base.lproj/Profile.storyboard; sourceTree = SOURCE_ROOT; };
+		272A7B951DCC7C8E00D83149 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +64,6 @@
 			children = (
 				272A7B6C1DCC6A3100D83149 /* Classes */,
 				272A7B5A1DCC56AE00D83149 /* AppDelegate.swift */,
-				272A7B5C1DCC56AE00D83149 /* ViewController.swift */,
-				272A7B5E1DCC56AE00D83149 /* Main.storyboard */,
 				272A7B611DCC56AE00D83149 /* Assets.xcassets */,
 				272A7B631DCC56AE00D83149 /* LaunchScreen.storyboard */,
 				272A7B661DCC56AE00D83149 /* Info.plist */,
@@ -82,6 +88,7 @@
 		272A7B6D1DCC6A3100D83149 /* Follow */ = {
 			isa = PBXGroup;
 			children = (
+				272A7B8F1DCC790C00D83149 /* Follow.storyboard */,
 				272A7B6E1DCC6A3100D83149 /* Controller */,
 				272A7B6F1DCC6A3100D83149 /* Model */,
 				272A7B701DCC6A3100D83149 /* View */,
@@ -113,6 +120,7 @@
 		272A7B711DCC6A3100D83149 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				272A7B891DCC789000D83149 /* Home.storyboard */,
 				272A7B721DCC6A3100D83149 /* Controller */,
 				272A7B731DCC6A3100D83149 /* Model */,
 				272A7B741DCC6A3100D83149 /* View */,
@@ -144,6 +152,7 @@
 		272A7B751DCC6A3100D83149 /* Live */ = {
 			isa = PBXGroup;
 			children = (
+				272A7B8C1DCC78BE00D83149 /* Live.storyboard */,
 				272A7B761DCC6A3100D83149 /* Controller */,
 				272A7B771DCC6A3100D83149 /* Model */,
 				272A7B781DCC6A3100D83149 /* View */,
@@ -175,6 +184,7 @@
 		272A7B791DCC6A3100D83149 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				272A7B5E1DCC56AE00D83149 /* Main.storyboard */,
 				272A7B7A1DCC6A3100D83149 /* Controller */,
 				272A7B7B1DCC6A3100D83149 /* Model */,
 				272A7B7C1DCC6A3100D83149 /* View */,
@@ -185,6 +195,7 @@
 		272A7B7A1DCC6A3100D83149 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				272A7B951DCC7C8E00D83149 /* MainViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -206,6 +217,7 @@
 		272A7B7D1DCC6A3100D83149 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				272A7B921DCC793B00D83149 /* Profile.storyboard */,
 				272A7B7E1DCC6A3100D83149 /* Controller */,
 				272A7B7F1DCC6A3100D83149 /* Model */,
 				272A7B801DCC6A3100D83149 /* View */,
@@ -359,6 +371,10 @@
 				272A7B651DCC56AE00D83149 /* LaunchScreen.storyboard in Resources */,
 				272A7B621DCC56AE00D83149 /* Assets.xcassets in Resources */,
 				272A7B601DCC56AE00D83149 /* Main.storyboard in Resources */,
+				272A7B8E1DCC78BE00D83149 /* Live.storyboard in Resources */,
+				272A7B8B1DCC789000D83149 /* Home.storyboard in Resources */,
+				272A7B941DCC793B00D83149 /* Profile.storyboard in Resources */,
+				272A7B911DCC790C00D83149 /* Follow.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,8 +385,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				272A7B5D1DCC56AE00D83149 /* ViewController.swift in Sources */,
 				272A7B5B1DCC56AE00D83149 /* AppDelegate.swift in Sources */,
+				272A7B961DCC7C8E00D83149 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +399,7 @@
 				272A7B5F1DCC56AE00D83149 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		272A7B631DCC56AE00D83149 /* LaunchScreen.storyboard */ = {
@@ -391,6 +408,42 @@
 				272A7B641DCC56AE00D83149 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		272A7B891DCC789000D83149 /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				272A7B8A1DCC789000D83149 /* Base */,
+			);
+			name = Home.storyboard;
+			path = ../Main;
+			sourceTree = "<group>";
+		};
+		272A7B8C1DCC78BE00D83149 /* Live.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				272A7B8D1DCC78BE00D83149 /* Base */,
+			);
+			name = Live.storyboard;
+			path = ../Main;
+			sourceTree = "<group>";
+		};
+		272A7B8F1DCC790C00D83149 /* Follow.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				272A7B901DCC790C00D83149 /* Base */,
+			);
+			name = Follow.storyboard;
+			path = ../Main;
+			sourceTree = "<group>";
+		};
+		272A7B921DCC793B00D83149 /* Profile.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				272A7B931DCC793B00D83149 /* Base */,
+			);
+			name = Profile.storyboard;
+			path = ../Main;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
