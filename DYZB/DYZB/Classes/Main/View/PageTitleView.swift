@@ -8,6 +8,11 @@
 
 import UIKit
 
+// MARK:- 定义协议
+protocol PageTitleViewDelegate : class {
+    func pageTitleView(_ titleView : PageTitleView, selectedIndex index : Int)
+}
+
 // MARK:- 定义常量
 private let kScrollLineH : CGFloat = 2
 // private let kNormalColor : (CGFloat, CGFloat, CGFloat) = (85, 85, 85)
@@ -18,6 +23,7 @@ class PageTitleView: UIView {
     // MARK:- 定义属性
     fileprivate var titles : [String]
     fileprivate var currentIndex : Int = 0
+    weak var delegate : PageTitleViewDelegate?
     
     // MARK:- 懒加载
     fileprivate lazy var titleLabels : [UILabel] = [UILabel]()
@@ -122,5 +128,22 @@ extension PageTitleView {
         UIView.animate(withDuration: 0.15, animations: {
             self.scrollLine.frame.origin.x = scrollLineX
         })
+        
+        // 点击时通知代理，调用HomeViewController中的代理方法
+        delegate?.pageTitleView(self, selectedIndex: currentIndex)
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

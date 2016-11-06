@@ -18,6 +18,7 @@ class HomeViewController: UIViewController {
         let titleFrame = CGRect(x: 0, y: kStatusBarH + kNavigationBarH , width: kScreenW, height: kTitleViewH)
         let titles = ["推荐","游戏","娱乐","趣玩"];
         let titleView = PageTitleView(frame: titleFrame, titles: titles)
+        titleView.delegate = self
         
         return titleView
     }()
@@ -65,6 +66,14 @@ extension HomeViewController {
         let searchItem = UIBarButtonItem(imageName: "btn_search", highImageName: "btn_search_clicked", size: size)
         let qrcodeItem = UIBarButtonItem(imageName: "Image_scan", highImageName: "Image_scan_click", size: size)
         navigationItem.rightBarButtonItems = [historyItem, searchItem, qrcodeItem]
+    }
+}
+
+// MARK:- PageTitleViewDelegate
+extension HomeViewController : PageTitleViewDelegate {
+    func pageTitleView(_ titleView: PageTitleView, selectedIndex index: Int) {
+      
+        pageContentView.setCurrentIndex(index)
     }
 }
 
