@@ -22,6 +22,7 @@ class HomeViewController: UIViewController {
         
         return titleView
     }()
+    
     fileprivate lazy var pageContentView : PageContentView = {[weak self] in
         
         let contentH = kScreenH - kStatusBarH - kNavigationBarH - kTitleViewH - kTabbarH
@@ -34,6 +35,7 @@ class HomeViewController: UIViewController {
         childVcs.append(FunnyViewController())
 
         let contentView = PageContentView(frame: contentFrame, childVcs: childVcs, parentViewController: self)
+        contentView.delegate = self
         
         return contentView
     }()
@@ -69,13 +71,25 @@ extension HomeViewController {
     }
 }
 
-// MARK:- PageTitleViewDelegate
+// MARK:- 遵守PageTitleViewDelegate协议
 extension HomeViewController : PageTitleViewDelegate {
     func pageTitleView(_ titleView: PageTitleView, selectedIndex index: Int) {
       
         pageContentView.setCurrentIndex(index)
     }
 }
+
+// MARK:- 遵守PageContentViewDelegate协议
+extension HomeViewController : PageContentViewDelegate {
+    func pageContentView(_ contentView: PageContentView, progress: CGFloat, sourceIndex: Int, targetIndex: Int) {
+        
+        print(progress)
+        print(sourceIndex)
+        print(targetIndex)
+        
+    }
+}
+
 
 
 
