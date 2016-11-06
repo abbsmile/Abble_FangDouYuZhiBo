@@ -20,6 +20,12 @@
 		272A7B9F1DCC8AEA00D83149 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272A7B9E1DCC8AEA00D83149 /* HomeViewController.swift */; };
 		272A7BA11DCCA52D00D83149 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272A7BA01DCCA52D00D83149 /* PageTitleView.swift */; };
 		272A7BA31DCCABE400D83149 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272A7BA21DCCABE400D83149 /* Common.swift */; };
+		27C5DBB11DCE9CD60097BDB4 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C5DBB01DCE9CD60097BDB4 /* PageContentView.swift */; };
+		27C5DBB31DCEACCE0097BDB4 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C5DBB21DCEACCE0097BDB4 /* UIColor-Extension.swift */; };
+		27C5DBB71DCEB02A0097BDB4 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C5DBB61DCEB02A0097BDB4 /* RecommendViewController.swift */; };
+		27C5DBB91DCEB0410097BDB4 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C5DBB81DCEB0410097BDB4 /* GameViewController.swift */; };
+		27C5DBBB1DCEB04B0097BDB4 /* AmuseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C5DBBA1DCEB04B0097BDB4 /* AmuseViewController.swift */; };
+		27C5DBBD1DCEB0540097BDB4 /* FunnyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C5DBBC1DCEB0540097BDB4 /* FunnyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +44,12 @@
 		272A7B9E1DCC8AEA00D83149 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		272A7BA01DCCA52D00D83149 /* PageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 		272A7BA21DCCABE400D83149 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		27C5DBB01DCE9CD60097BDB4 /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
+		27C5DBB21DCEACCE0097BDB4 /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
+		27C5DBB61DCEB02A0097BDB4 /* RecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
+		27C5DBB81DCEB0410097BDB4 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		27C5DBBA1DCEB04B0097BDB4 /* AmuseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmuseViewController.swift; sourceTree = "<group>"; };
+		27C5DBBC1DCEB0540097BDB4 /* FunnyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +152,10 @@
 			children = (
 				272A7B891DCC789000D83149 /* Home.storyboard */,
 				272A7B9E1DCC8AEA00D83149 /* HomeViewController.swift */,
+				27C5DBB61DCEB02A0097BDB4 /* RecommendViewController.swift */,
+				27C5DBB81DCEB0410097BDB4 /* GameViewController.swift */,
+				27C5DBBA1DCEB04B0097BDB4 /* AmuseViewController.swift */,
+				27C5DBBC1DCEB0540097BDB4 /* FunnyViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -220,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				272A7BA01DCCA52D00D83149 /* PageTitleView.swift */,
+				27C5DBB01DCE9CD60097BDB4 /* PageContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -292,6 +309,7 @@
 			children = (
 				272A7B991DCC873400D83149 /* Extension */,
 				272A7BA21DCCABE400D83149 /* Common.swift */,
+				27C5DBB21DCEACCE0097BDB4 /* UIColor-Extension.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -381,12 +399,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27C5DBB91DCEB0410097BDB4 /* GameViewController.swift in Sources */,
 				272A7B5B1DCC56AE00D83149 /* AppDelegate.swift in Sources */,
+				27C5DBB31DCEACCE0097BDB4 /* UIColor-Extension.swift in Sources */,
+				27C5DBB71DCEB02A0097BDB4 /* RecommendViewController.swift in Sources */,
 				272A7B9D1DCC876C00D83149 /* UIBarButtonItem.swift in Sources */,
 				272A7BA11DCCA52D00D83149 /* PageTitleView.swift in Sources */,
+				27C5DBB11DCE9CD60097BDB4 /* PageContentView.swift in Sources */,
 				272A7B961DCC7C8E00D83149 /* MainViewController.swift in Sources */,
 				272A7BA31DCCABE400D83149 /* Common.swift in Sources */,
+				27C5DBBB1DCEB04B0097BDB4 /* AmuseViewController.swift in Sources */,
 				272A7B9F1DCC8AEA00D83149 /* HomeViewController.swift in Sources */,
+				27C5DBBD1DCEB0540097BDB4 /* FunnyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -98,7 +98,6 @@ extension PageTitleView {
         
         scrollLine.frame = CGRect(x: firstlabel.frame.origin.x, y: frame.height - kScrollLineH, width: firstlabel.frame.width, height: kScrollLineH)
         scrollView.addSubview(scrollLine)
-        
     }
 
     

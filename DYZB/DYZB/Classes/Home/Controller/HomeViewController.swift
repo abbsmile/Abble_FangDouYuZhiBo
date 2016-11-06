@@ -21,6 +21,21 @@ class HomeViewController: UIViewController {
         
         return titleView
     }()
+    fileprivate lazy var pageContentView : PageContentView = {[weak self] in
+        
+        let contentH = kScreenH - kStatusBarH - kNavigationBarH - kTitleViewH - kTabbarH
+        let contentFrame = CGRect(x: 0, y: kStatusBarH + kNavigationBarH + kTitleViewH, width: kScreenW, height: contentH)
+        
+        var childVcs = [UIViewController]()
+        childVcs.append(RecommendViewController())
+        childVcs.append(GameViewController())
+        childVcs.append(AmuseViewController())
+        childVcs.append(FunnyViewController())
+
+        let contentView = PageContentView(frame: contentFrame, childVcs: childVcs, parentViewController: self)
+        
+        return contentView
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,8 +53,8 @@ extension HomeViewController {
         
         setupNavigationBar()
         view.addSubview(pageTitleView)
+        view.addSubview(pageContentView)
     }
-    
     
     fileprivate func setupNavigationBar() {
         
