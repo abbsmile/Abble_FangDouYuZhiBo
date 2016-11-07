@@ -83,10 +83,11 @@ extension HomeViewController : PageTitleViewDelegate {
 extension HomeViewController : PageContentViewDelegate {
     func pageContentView(_ contentView: PageContentView, progress: CGFloat, sourceIndex: Int, targetIndex: Int) {
         
-        print(progress)
-        print(sourceIndex)
-        print(targetIndex)
-        
+        // 下面就是利用这些数据调用PageTitleView中的方法,然后对文字和图标进行移动设置
+//        print(progress)
+//        print(sourceIndex)
+//        print(targetIndex)
+        pageTitleView.setTitleWithProgress(progress, sourceIndex: sourceIndex, targetIndex: targetIndex)
     }
 }
 

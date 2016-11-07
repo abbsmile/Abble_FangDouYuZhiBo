@@ -15,7 +15,8 @@ protocol PageTitleViewDelegate : class {
 
 // MARK:- 定义常量
 private let kScrollLineH : CGFloat = 2
-// private let kNormalColor : (CGFloat, CGFloat, CGFloat) = (85, 85, 85)
+private let kNormalColor : (CGFloat, CGFloat, CGFloat) = (85, 85, 85)
+private let kSelectColor : (CGFloat, CGFloat, CGFloat) = (255, 128, 0)
 
 // MARK:- 定义PageTitleView类
 class PageTitleView: UIView {
@@ -134,6 +135,33 @@ extension PageTitleView {
     }
 }
 
+// MARK:- 对外暴露的方法
+extension PageTitleView {
+    func setTitleWithProgress(_ progress : CGFloat, sourceIndex : Int, targetIndex : Int) {
+        
+        let sourceLabel = titleLabels[sourceIndex]
+        let targetLabel = titleLabels[targetIndex]
+        
+        // 滑块
+        let moveTotalX = targetLabel.frame.origin.x - sourceLabel.frame.origin.x
+        let moveX = moveTotalX * progress
+        scrollLine.frame.origin.x = sourceLabel.frame.origin.x + moveX
+        
+        // 颜色的渐变-这个项目自己以后肯定要重写,现在不要纠结这些细节,这些东西以后在简书上详细研究
+        // 3.1.取出变化的范围
+        let colorDelta = (kSelectColor.0 - kNormalColor.0, kSelectColor.1 - kNormalColor.1, kSelectColor.2 - kNormalColor.2)
+        
+        // 3.2.变化sourceLabel
+        sourceLabel.textColor = UIColor(r: kSelectColor.0 - colorDelta.0 * progress, g: kSelectColor.1 - colorDelta.1 * progress, b: kSelectColor.2 - colorDelta.2 * progress)
+        
+        // 3.2.变化targetLabel
+        targetLabel.textColor = UIColor(r: kNormalColor.0 + colorDelta.0 * progress, g: kNormalColor.1 + colorDelta.1 * progress, b: kNormalColor.2 + colorDelta.2 * progress)
+        
+        // 4.记录最新的index
+        currentIndex = targetIndex
+
+    }
+}
 
 
 
